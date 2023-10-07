@@ -1,12 +1,114 @@
+:root{
+    --neutral-60:#535761;
+    --error-60:#D82A49;
+    --text-60:#222734;
+    --primary-10:#E9ECF4;
+    --primary-60: #1E4593;
+    --neutral-80: #222734;
+    --primary-20: #D2DAE9;
+    --neutral-0: #FFF;
+}
+
 .footer{
     display: flex;
     flex-direction: column;
     gap:24px;
     margin: 0 auto;
     max-width: 1600px;
-    padding-left: 80px;
+    margin-top: 27px;
+    padding: 16px 80px 16px 80px;
 }
 
 .navigation-list{
     display: flex;
+    justify-content: space-between;
+}
+
+.navigation-list .navigation__menu{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+
+.navigation__menu .navigation__item:nth-child(1){
+    margin-right: 4px;
+}
+
+.navigation__menu .navigation__link{
+    color: var(--text-60);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 20.8px */
+    text-decoration: none;
+}
+
+.navigation__menu .navigation__link__red{
+    color: var(--error-60);
+}
+
+.contacts-shedule{
+    display: flex;
+    list-style: none;
+    gap: 24px;
+    align-items: center;
+    
+}
+
+.contacts-shedule-item{
+    color: var(--neutral-60, #535761);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 20.8px */
+    text-decoration-line: underline;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.contacts-shedule-time{
+    color: var(--neutral-60, #535761);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 20.8px */
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+.social-media{
+    display: flex;
+    list-style: none;
+    gap: 8px;
+}
+
+.social-media .social-media__link{
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    border-radius: 6px;
+    border: 1px solid var(--neutral-10);
+}
+
+.more-info{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.more-info span{
+    color: var(--neutral-50);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 20.8px */
 }

@@ -553,6 +553,7 @@
 }
 
 .main__text{
+    margin-right: 80px;
     grid-column-start: 2;
     grid-column-end: 3;
     color: var(--neutral-50);
