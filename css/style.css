@@ -1,6 +1,10 @@
 @import '/css/header.css';
 @import '/css/main.css';
 @import '/css/footer.css';
+@import '/css/media-planhet.css';
+@import '/css/media-telephone.css';
+
+
 *{
     padding: 0;
     margin: 0;
@@ -9,5 +13,6 @@
 }
 html{
     background: #FFF;
+    /* overflow: hidden; */
 }
 

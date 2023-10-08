@@ -28,7 +28,6 @@
                     </ul>
                 </nav>
             </div>
-            
             <div class="header__bottom">
                 <a href="#" class="nav-element__logo"><img src="image/logoProm.jpg" alt="логотип компании"></a>
                 <button class="header__bottom-catalog">
@@ -52,182 +51,186 @@
         <section class="filter">
             <div class="filter__head">
                 <span class="filter__head-text">Фильтры</span>
+                <img src="image/filter-line-icon.jpg" alt="иконка фильтра" class="filter__head-icon">
                 <a href="#" class="filter__link-reset">Сбросить</a>
             </div>
-            <div class="filter__item">
-                <p class="filter__item-title">Цена, р</p>
-                <div class="filter__price">
-                    <div class="filter__price-text">
-                        <span class="filter__price-text__m">От</span>
-                        <span class="filter__price-text__m">До</span>
-                    </div>
-                    <div class="filter__price-number">
-                        <input type="number" class="input-min" value="0">
-                        <input type="number" class="input-max" value="10000">
-                    </div>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar__active"></div>
-                    </div>
-                    <div class="filter__price-range filter__price-range__active">
-                        <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
-                        <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+            <div class="filter-menu">
+                <div class="filter__item">
+                    <p class="filter__item-title">Цена, р</p>
+                    <div class="filter__price">
+                        <div class="filter__price-text">
+                            <span class="filter__price-text__m">От</span>
+                            <span class="filter__price-text__m">До</span>
+                        </div>
+                        <div class="filter__price-number">
+                            <input type="number" class="input-min" value="0">
+                            <input type="number" class="input-max" value="10000">
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar__active"></div>
+                        </div>
+                        <div class="filter__price-range filter__price-range__active">
+                            <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+                            <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+                        </div>
                     </div>
                 </div>
+                <div class="filter__item">
+                    <p class="filter__item-title">Наружный диаметр, мм</p>
+                    <div class="filter__price">
+                        <div class="filter__price-text">
+                            <span class="filter__price-text__m">От</span>
+                            <span class="filter__price-text__m">До</span>
+                        </div>
+                        <div class="filter__price-number">
+                             <input type="number" class="input-min" value="2500">
+                            <input type="number" class="input-max" value="7500">
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar"></div>
+                        </div>
+                        <div class="filter__price-range">
+                            <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+                            <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+                        </div>
+                    </div>
+                </div>
+                <div class="filter__item">
+                    <p class="filter__item-title">Внутренний диаметр, мм</p>
+                    <div class="filter__price">
+                        <div class="filter__price-text">
+                            <span class="filter__price-text__m">От</span>
+                            <span class="filter__price-text__m">До</span>
+                        </div>
+                        <div class="filter__price-number">
+                             <input type="number" class="input-min" value="2500">
+                            <input type="number" class="input-max" value="7500">
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar"></div>
+                        </div>
+                        <div class="filter__price-range">
+                            <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+                            <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+                        </div>
+                    </div>
+                </div>
+                <div class="filter__item">
+                    <p class="filter__item-title">Ширина, мм</p>
+                    <div class="filter__price">
+                        <div class="filter__price-text">
+                            <span class="filter__price-text__m">От</span>
+                            <span class="filter__price-text__m">До</span>
+                        </div>
+                        <div class="filter__price-number">
+                             <input type="number" class="input-min" value="2500">
+                            <input type="number" class="input-max" value="7500">
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar"></div>
+                        </div>
+                        <div class="filter__price-range">
+                            <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+                            <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+                        </div>
+                    </div>
+                </div>
+                <div class="filter__item-checkbox">
+                    <div class="filter__item-checkbox__title">
+                        <img src="image/down.jpg" alt="">
+                        <p>Бренд</p>
+                    </div>
+                    <input type="text" placeholder="Я ищу..." class="filter__item-search">
+                    <fieldset>
+                        <div class="test-scroll">
+                            <div class="filter__choice">
+                                <input type="checkbox" id="brand_one" name="brand">
+                                <label for="brand_one">Бренд 1</label>
+                                <p class="filter_balance">22</p>
+                            </div>
+                            <div class="filter__choice">
+                                <input type="checkbox" id="brand_two" name="brand">
+                                <label for="brand_two">Бренд 1</label>
+                                <p class="filter_balance">22</p>
+                            </div>
+                            <div class="filter__choice">
+                                <input type="checkbox" id="brand_three" name="brand">
+                                <label for="brand_three">Бренд 1</label>
+                                <p class="filter_balance">22</p>
+                            </div>
+                            <div class="filter__choice">
+                                <input type="checkbox" id="brand_four" name="brand">
+                                <label for="brand_four">Бренд 1</label>
+                                <p class="filter_balance">22</p>
+                            </div>
+                            <div class="filter__choice">
+                                <input type="checkbox" id="brand_five" name="brand">
+                                <label for="brand_five">Бренд 1</label>
+                                <p class="filter_balance">22</p>
+                            </div>
+                            <div class="filter__choice">
+                                <input type="checkbox" id="brand_six" name="brand">
+                                <label for="brand_six">Бренд 1</label>
+                                <p class="filter_balance">22</p>
+                            </div>
+                            <div class="filter__choice">
+                                <input type="checkbox" id="brand_seven" name="brand">
+                                <label for="brand_seven">Бренд 1</label>
+                                <p class="filter_balance">22</p>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="filter__item-checkbox">
+                    <div class="filter__item-checkbox__title">
+                        <img src="image/down.jpg" alt="">
+                        <p>Материал</p>
+                    </div>
+                    <input type="text" placeholder="Я ищу..." class="filter__item-search">
+                    <fieldset>
+                        <div class="filter__choice">
+                            <input type="checkbox" id="material_one" name="material">
+                            <label for="material_one">Материал 1</label>
+                            <p class="filter_balance">22</p>
+                        </div>
+                        <div class="filter__choice">
+                            <input type="checkbox" id="material_two" name="material">
+                            <label for="material_two">Материал 1</label>
+                            <p class="filter_balance">22</p>
+                        </div>
+                        <div class="filter__choice">
+                            <input type="checkbox" id="material_three" name="material">
+                            <label for="material_three">Материал 1</label>
+                            <p class="filter_balance">22</p>
+                        </div>
+                        <div class="filter__choice">
+                            <input type="checkbox" id="material_four" name="material">
+                            <label for="material_four">Материал 1</label>
+                            <p class="filter_balance">22</p>
+                        </div>
+                        <div class="filter__choice">
+                            <input type="checkbox" id="material_five" name="material">
+                            <label for="material_five">Материал 1</label>
+                            <p class="filter_balance">22</p>
+                        </div>
+                        <div class="filter__choice">
+                            <input type="checkbox" id="material_six" name="material">
+                            <label for="material_six">Материал 1</label>
+                            <p class="filter_balance">22</p>
+                        </div>
+                        <div class="filter__choice">
+                            <input type="checkbox" id="material_seven" name="material">
+                            <label for="material_seven">Материал 1</label>
+                            <p class="filter_balance">22</p>
+                        </div>
+                    </fieldset>
+                    <div class="filter__button">
+                        <button type="button">Применить</button>
+                        <a href="#" class="filter__btn-reset">Сбросить</a>
+                    </div>
+                </div> 
             </div>
-            <div class="filter__item">
-                <p class="filter__item-title">Наружный диаметр, мм</p>
-                <div class="filter__price">
-                    <div class="filter__price-text">
-                        <span class="filter__price-text__m">От</span>
-                        <span class="filter__price-text__m">До</span>
-                    </div>
-                    <div class="filter__price-number">
-                         <input type="number" class="input-min" value="2500">
-                        <input type="number" class="input-max" value="7500">
-                    </div>
-                    <div class="progress">
-                        <div class="progress-bar"></div>
-                    </div>
-                    <div class="filter__price-range">
-                        <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
-                        <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
-                    </div>
-                </div>
-            </div>
-            <div class="filter__item">
-                <p class="filter__item-title">Внутренний диаметр, мм</p>
-                <div class="filter__price">
-                    <div class="filter__price-text">
-                        <span class="filter__price-text__m">От</span>
-                        <span class="filter__price-text__m">До</span>
-                    </div>
-                    <div class="filter__price-number">
-                         <input type="number" class="input-min" value="2500">
-                        <input type="number" class="input-max" value="7500">
-                    </div>
-                    <div class="progress">
-                        <div class="progress-bar"></div>
-                    </div>
-                    <div class="filter__price-range">
-                        <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
-                        <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
-                    </div>
-                </div>
-            </div>
-            <div class="filter__item">
-                <p class="filter__item-title">Ширина, мм</p>
-                <div class="filter__price">
-                    <div class="filter__price-text">
-                        <span class="filter__price-text__m">От</span>
-                        <span class="filter__price-text__m">До</span>
-                    </div>
-                    <div class="filter__price-number">
-                         <input type="number" class="input-min" value="2500">
-                        <input type="number" class="input-max" value="7500">
-                    </div>
-                    <div class="progress">
-                        <div class="progress-bar"></div>
-                    </div>
-                    <div class="filter__price-range">
-                        <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
-                        <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
-                    </div>
-                </div>
-            </div>
-            <div class="filter__item-checkbox">
-                <div class="filter__item-checkbox__title">
-                    <img src="image/down.jpg" alt="">
-                    <p>Бренд</p>
-                </div>
-                <input type="text" placeholder="Я ищу..." class="filter__item-search">
-                <fieldset>
-                    <div class="test-scroll">
-                        <div class="filter__choice">
-                            <input type="checkbox" id="brand_one" name="brand">
-                            <label for="brand_one">Бренд 1</label>
-                            <p class="filter_balance">22</p>
-                        </div>
-                        <div class="filter__choice">
-                            <input type="checkbox" id="brand_two" name="brand">
-                            <label for="brand_two">Бренд 1</label>
-                            <p class="filter_balance">22</p>
-                        </div>
-                        <div class="filter__choice">
-                            <input type="checkbox" id="brand_three" name="brand">
-                            <label for="brand_three">Бренд 1</label>
-                            <p class="filter_balance">22</p>
-                        </div>
-                        <div class="filter__choice">
-                            <input type="checkbox" id="brand_four" name="brand">
-                            <label for="brand_four">Бренд 1</label>
-                            <p class="filter_balance">22</p>
-                        </div>
-                        <div class="filter__choice">
-                            <input type="checkbox" id="brand_five" name="brand">
-                            <label for="brand_five">Бренд 1</label>
-                            <p class="filter_balance">22</p>
-                        </div>
-                        <div class="filter__choice">
-                            <input type="checkbox" id="brand_six" name="brand">
-                            <label for="brand_six">Бренд 1</label>
-                            <p class="filter_balance">22</p>
-                        </div>
-                        <div class="filter__choice">
-                            <input type="checkbox" id="brand_seven" name="brand">
-                            <label for="brand_seven">Бренд 1</label>
-                            <p class="filter_balance">22</p>
-                        </div>
-                    </div>
-                </fieldset>
-            </div>
-            <div class="filter__item-checkbox">
-                <div class="filter__item-checkbox__title">
-                    <img src="image/down.jpg" alt="">
-                    <p>Материал</p>
-                </div>
-                <input type="text" placeholder="Я ищу..." class="filter__item-search">
-                <fieldset>
-                    <div class="filter__choice">
-                        <input type="checkbox" id="material_one" name="material">
-                        <label for="material_one">Материал 1</label>
-                        <p class="filter_balance">22</p>
-                    </div>
-                    <div class="filter__choice">
-                        <input type="checkbox" id="material_two" name="material">
-                        <label for="material_two">Материал 1</label>
-                        <p class="filter_balance">22</p>
-                    </div>
-                    <div class="filter__choice">
-                        <input type="checkbox" id="material_three" name="material">
-                        <label for="material_three">Материал 1</label>
-                        <p class="filter_balance">22</p>
-                    </div>
-                    <div class="filter__choice">
-                        <input type="checkbox" id="material_four" name="material">
-                        <label for="material_four">Материал 1</label>
-                        <p class="filter_balance">22</p>
-                    </div>
-                    <div class="filter__choice">
-                        <input type="checkbox" id="material_five" name="material">
-                        <label for="material_five">Материал 1</label>
-                        <p class="filter_balance">22</p>
-                    </div>
-                    <div class="filter__choice">
-                        <input type="checkbox" id="material_six" name="material">
-                        <label for="material_six">Материал 1</label>
-                        <p class="filter_balance">22</p>
-                    </div>
-                    <div class="filter__choice">
-                        <input type="checkbox" id="material_seven" name="material">
-                        <label for="material_seven">Материал 1</label>
-                        <p class="filter_balance">22</p>
-                    </div>
-                </fieldset>
-                <div class="filter__button">
-                    <button type="button">Применить</button>
-                    <a href="#" class="filter__link-reset">Сбросить</a>
-                </div>
-            </div>
+
         </section>
         <section class="slider">
 
@@ -267,6 +270,41 @@
                                 <button type="button" class="catalog__price-basket__in">В корзину</button>
                             </div>
                         </div>
+                        <div class="catalog-buy">
+                            <a href="" class="catalog-buy__momental">Купить в 1 клик</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog">
+                    <div class="catalog__top">
+                        <span class="catalog__not-available">Нет в наличии</span>
+                        <span class="catalog__hit">Хит</span>
+                        <img src="image/catalog-item.png" alt="позиция каталога">
+                    </div>
+                    <div class="catalog__bot">
+                        <p class="catalog__text">
+                            Котел газ.нап. BAXI POWER HT 1.1200 (WHS43112060-)
+                        </p>
+                        <div class="catalog__info">
+                            <div class="catalog__info-text">
+                                <span>Внутренний диаметр, мм</span>
+                                <span>Наружный диаметр, мм</span>
+                                <span>Ширина, мм</span>
+                            </div>
+                            <div class="catalog__info-number">
+                                <span>22</span>
+                                <span>29.2</span>
+                                <span>3.2</span>
+                            </div>
+                        </div>
+                        <div class="catalog__price">
+                            <div class="catalog__price-action">
+                                <span class="catalog__price-text catalog__price-not-aviable">351 375,25₽</span>
+                            </div>
+                            <div class="catalog__price-basket">
+                                <button type="button" class="catalog__price-basket__analog">Подобрать аналог</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="catalog">
@@ -274,7 +312,7 @@
                         <span class="catalog__new">Новинка</span>
                         <span class="catalog__action">Акция</span>
                         <span class="catalog__hit">Хит</span>
-                        <img src="image/catalog-item.png" alt="позиция каталога">
+                        <img src="image/product1.png" alt="позиция каталога">
                     </div>
                     <div class="catalog__bot">
                         <p class="catalog__text">
@@ -311,7 +349,7 @@
                         <span class="catalog__new">Новинка</span>
                         <span class="catalog__action">Акция</span>
                         <span class="catalog__hit">Хит</span>
-                        <img src="image/catalog-item.png" alt="позиция каталога">
+                        <img src="image/product2.png" alt="позиция каталога">
                     </div>
                     <div class="catalog__bot">
                         <p class="catalog__text">
@@ -348,7 +386,7 @@
                         <span class="catalog__new">Новинка</span>
                         <span class="catalog__action">Акция</span>
                         <span class="catalog__hit">Хит</span>
-                        <img src="image/catalog-item.png" alt="позиция каталога">
+                        <img src="image/product3.png" alt="позиция каталога">
                     </div>
                     <div class="catalog__bot">
                         <p class="catalog__text">
@@ -385,7 +423,7 @@
                         <span class="catalog__new">Новинка</span>
                         <span class="catalog__action">Акция</span>
                         <span class="catalog__hit">Хит</span>
-                        <img src="image/catalog-item.png" alt="позиция каталога">
+                        <img src="image/product4.png" alt="позиция каталога">
                     </div>
                     <div class="catalog__bot">
                         <p class="catalog__text">
@@ -422,44 +460,7 @@
                         <span class="catalog__new">Новинка</span>
                         <span class="catalog__action">Акция</span>
                         <span class="catalog__hit">Хит</span>
-                        <img src="image/catalog-item.png" alt="позиция каталога">
-                    </div>
-                    <div class="catalog__bot">
-                        <p class="catalog__text">
-                            Котел газ.нап. BAXI POWER HT 1.1200 (WHS43112060-)
-                        </p>
-                        <div class="catalog__info">
-                            <div class="catalog__info-text">
-                                <span>Внутренний диаметр, мм</span>
-                                <span>Наружный диаметр, мм</span>
-                                <span>Ширина, мм</span>
-                            </div>
-                            <div class="catalog__info-number">
-                                <span>22</span>
-                                <span>29.2</span>
-                                <span>3.2</span>
-                            </div>
-                        </div>
-                        <div class="catalog__price">
-                            <div class="catalog__price-action">
-                                <span class="catalog__price-text">351 375,25₽</span>
-                                <del class="catalog__price-delete">450 875₽</del>   
-                            </div>
-                            <div class="catalog__price-basket">
-                                <a href="#" class="catalog__price-basket__del"><img src="image/minus-sm.jpg" alt=""></a>
-                                <span>1</span>
-                                <a href="#" class="catalog__price-basket__add"><img src="image/add-sm.jpg" alt=""></a>
-                                <button type="button" class="catalog__price-basket__in">В корзину</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="catalog">
-                    <div class="catalog__top">
-                        <span class="catalog__new">Новинка</span>
-                        <span class="catalog__action">Акция</span>
-                        <span class="catalog__hit">Хит</span>
-                        <img src="image/catalog-item.png" alt="позиция каталога">
+                        <img src="image/product5.png" alt="позиция каталога">
                     </div>
                     <div class="catalog__bot">
                         <p class="catalog__text">
@@ -723,7 +724,7 @@
     <footer class="footer">
         <div class="navigation-list">
             <ul class="navigation__menu">
-                <li class="navigation__item "><a href="#" class="navigation__link navigation__link__red">Акции</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link navigation__link__red">Акции</a></li>
                 <li class="navigation__item"><a href="#" class="navigation__link">Оптовым покупателям</a></li>
                 <li class="navigation__item"><a href="#" class="navigation__link">Ремонт и обслуживание</a></li>
                 <li class="navigation__item"><a href="#" class="navigation__link">Гарантии</a></li>
@@ -755,5 +756,6 @@
             <img src="image/madeINTRID.png" alt="">
         </div>
     </footer>
+    <script src="js/app.js"></script>
 </body>
 </html>
