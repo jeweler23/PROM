@@ -3,13 +3,15 @@ const filterMenu = document.querySelector('.filter-menu')
 const filterText = document.querySelector('.filter__head-text')
 const filterIcon = document.querySelector('.filter__head-icon')
 
+
+
+// console.log(filterMenu.children)
 filterHead.addEventListener('click',()=>{
     filterMenu.classList.toggle('filter-menu__active')
-    console.log(filterMenu)
 })
 
-document.addEventListener('click',(e)=>{
-    if(e.target !== filterHead && e.target !== filterText && e.target !== filterIcon && e.target!==filterMenu.parentElement.children){ 
+document.body.addEventListener('click',(e)=>{
+    if(e.target != filterHead && e.target!=filterText && e.target!=filterIcon){  
         filterMenu.classList.remove('filter-menu__active')
     }
 })
