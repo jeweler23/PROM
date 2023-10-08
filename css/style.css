@@ -1,8 +1,8 @@
-@import '../css/header.css';
-@import '../css/main.css';
-@import '../css/footer.css';
-@import '../css/media-planhet.css';
-@import '../css/media-telephone.css';
+@import './header.css';
+@import './main.css';
+@import './footer.css';
+@import './media-planhet.css';
+@import './media-telephone.css';
 
 
 *{
