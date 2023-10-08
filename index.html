@@ -42,6 +42,7 @@
                     <img src="image/phone.jpg" alt="" class="header_navbar__item">
                     <img src="image/user.jpg" alt="" class="header_navbar__item">
                     <img src="image/cart.jpg" alt="" class="header_navbar__item">
+                    <span class="basket-count">0</span>
                 </div>
             </div>
         </section>
@@ -69,9 +70,9 @@
                         <div class="progress">
                             <div class="progress-bar progress-bar__active"></div>
                         </div>
-                        <div class="filter__price-range filter__price-range__active">
-                            <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
-                            <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+                        <div class="filter__price-range ">
+                            <input type="range" class="range-min" min="0" max="10000" value="0" step="100">
+                            <input type="range" class="range-max" min="0" max="10000" value="10000" step="100">
                         </div>
                     </div>
                 </div>
@@ -83,15 +84,15 @@
                             <span class="filter__price-text__m">До</span>
                         </div>
                         <div class="filter__price-number">
-                             <input type="number" class="input-min" value="2500">
-                            <input type="number" class="input-max" value="7500">
+                            <input type="number" class="input-min" value="0">
+                            <input type="number" class="input-max" value="10000">
                         </div>
                         <div class="progress">
                             <div class="progress-bar"></div>
                         </div>
                         <div class="filter__price-range">
-                            <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
-                            <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+                            <input type="range" class="range-min" min="0" max="10000" value="0" step="100">
+                            <input type="range" class="range-max" min="0" max="10000" value="10000" step="100">
                         </div>
                     </div>
                 </div>
@@ -103,15 +104,15 @@
                             <span class="filter__price-text__m">До</span>
                         </div>
                         <div class="filter__price-number">
-                             <input type="number" class="input-min" value="2500">
-                            <input type="number" class="input-max" value="7500">
+                             <input type="number" class="input-min" value="0">
+                            <input type="number" class="input-max" value="1000">
                         </div>
                         <div class="progress">
                             <div class="progress-bar"></div>
                         </div>
                         <div class="filter__price-range">
-                            <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
-                            <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+                            <input type="range" class="range-min" min="0" max="10000" value="0" step="100">
+                            <input type="range" class="range-max" min="0" max="10000" value="10000" step="100">
                         </div>
                     </div>
                 </div>
@@ -123,15 +124,15 @@
                             <span class="filter__price-text__m">До</span>
                         </div>
                         <div class="filter__price-number">
-                             <input type="number" class="input-min" value="2500">
-                            <input type="number" class="input-max" value="7500">
+                             <input type="number" class="input-min" value="0">
+                            <input type="number" class="input-max" value="10000">
                         </div>
                         <div class="progress">
                             <div class="progress-bar"></div>
                         </div>
                         <div class="filter__price-range">
-                            <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
-                            <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+                            <input type="range" class="range-min" min="0" max="10000" value="0" step="100">
+                            <input type="range" class="range-max" min="0" max="10000" value="10000" step="100">
                         </div>
                     </div>
                 </div>
@@ -264,9 +265,9 @@
                                 <del class="catalog__price-delete">450 875₽</del>   
                             </div>
                             <div class="catalog__price-basket">
-                                <a href="#" class="catalog__price-basket__del"><img src="image/minus-sm.jpg" alt=""></a>
+                                <a class="catalog__price-basket__del"><img src="image/minus-sm.jpg" alt=""></a>
                                 <span>1</span>
-                                <a href="#" class="catalog__price-basket__add"><img src="image/add-sm.jpg" alt=""></a>
+                                <a class="catalog__price-basket__add"><img src="image/add-sm.jpg" alt=""></a>
                                 <button type="button" class="catalog__price-basket__in">В корзину</button>
                             </div>
                         </div>
@@ -282,6 +283,12 @@
                         <img src="image/catalog-item.png" alt="позиция каталога">
                     </div>
                     <div class="catalog__bot">
+                        <div class="catalog__price-basket" style="display: none;">
+                            <a class="catalog__price-basket__del"><img src="image/minus-sm.jpg" alt=""></a>
+                            <span>1</span>
+                            <a class="catalog__price-basket__add"><img src="image/add-sm.jpg" alt=""></a>
+                            <button type="button" class="catalog__price-basket__in">В корзину</button>
+                        </div>
                         <p class="catalog__text">
                             Котел газ.нап. BAXI POWER HT 1.1200 (WHS43112060-)
                         </p>
@@ -336,9 +343,9 @@
                                 <del class="catalog__price-delete">450 875₽</del>   
                             </div>
                             <div class="catalog__price-basket">
-                                <a href="#" class="catalog__price-basket__del"><img src="image/minus-sm.jpg" alt=""></a>
+                                <a class="catalog__price-basket__del"><img src="image/minus-sm.jpg" alt=""></a>
                                 <span>1</span>
-                                <a href="#" class="catalog__price-basket__add"><img src="image/add-sm.jpg" alt=""></a>
+                                <a class="catalog__price-basket__add"><img src="image/add-sm.jpg" alt=""></a>
                                 <button type="button" class="catalog__price-basket__in">В корзину</button>
                             </div>
                         </div>
@@ -373,9 +380,9 @@
                                 <del class="catalog__price-delete">450 875₽</del>   
                             </div>
                             <div class="catalog__price-basket">
-                                <a href="#" class="catalog__price-basket__del"><img src="image/minus-sm.jpg" alt=""></a>
+                                <a class="catalog__price-basket__del"><img src="image/minus-sm.jpg" alt=""></a>
                                 <span>1</span>
-                                <a href="#" class="catalog__price-basket__add"><img src="image/add-sm.jpg" alt=""></a>
+                                <a class="catalog__price-basket__add"><img src="image/add-sm.jpg" alt=""></a>
                                 <button type="button" class="catalog__price-basket__in">В корзину</button>
                             </div>
                         </div>
@@ -410,9 +417,9 @@
                                 <del class="catalog__price-delete">450 875₽</del>   
                             </div>
                             <div class="catalog__price-basket">
-                                <a href="#" class="catalog__price-basket__del"><img src="image/minus-sm.jpg" alt=""></a>
+                                <a class="catalog__price-basket__del"><img src="image/minus-sm.jpg" alt=""></a>
                                 <span>1</span>
-                                <a href="#" class="catalog__price-basket__add"><img src="image/add-sm.jpg" alt=""></a>
+                                <a class="catalog__price-basket__add"><img src="image/add-sm.jpg" alt=""></a>
                                 <button type="button" class="catalog__price-basket__in">В корзину</button>
                             </div>
                         </div>
@@ -447,9 +454,9 @@
                                 <del class="catalog__price-delete">450 875₽</del>   
                             </div>
                             <div class="catalog__price-basket">
-                                <a href="#" class="catalog__price-basket__del"><img src="image/minus-sm.jpg" alt=""></a>
+                                <a class="catalog__price-basket__del"><img src="image/minus-sm.jpg" alt=""></a>
                                 <span>1</span>
-                                <a href="#" class="catalog__price-basket__add"><img src="image/add-sm.jpg" alt=""></a>
+                                <a class="catalog__price-basket__add"><img src="image/add-sm.jpg" alt=""></a>
                                 <button type="button" class="catalog__price-basket__in">В корзину</button>
                             </div>
                         </div>
@@ -484,9 +491,9 @@
                                 <del class="catalog__price-delete">450 875₽</del>   
                             </div>
                             <div class="catalog__price-basket">
-                                <a href="#" class="catalog__price-basket__del"><img src="image/minus-sm.jpg" alt=""></a>
+                                <a class="catalog__price-basket__del"><img src="image/minus-sm.jpg" alt=""></a>
                                 <span>1</span>
-                                <a href="#" class="catalog__price-basket__add"><img src="image/add-sm.jpg" alt=""></a>
+                                <a class="catalog__price-basket__add"><img src="image/add-sm.jpg" alt=""></a>
                                 <button type="button" class="catalog__price-basket__in">В корзину</button>
                             </div>
                         </div>
@@ -521,9 +528,9 @@
                                 <del class="catalog__price-delete">450 875₽</del>   
                             </div>
                             <div class="catalog__price-basket">
-                                <a href="#" class="catalog__price-basket__del"><img src="image/minus-sm.jpg" alt=""></a>
+                                <a class="catalog__price-basket__del"><img src="image/minus-sm.jpg" alt=""></a>
                                 <span>1</span>
-                                <a href="#" class="catalog__price-basket__add"><img src="image/add-sm.jpg" alt=""></a>
+                                <a class="catalog__price-basket__add"><img src="image/add-sm.jpg" alt=""></a>
                                 <button type="button" class="catalog__price-basket__in">В корзину</button>
                             </div>
                         </div>
@@ -558,9 +565,9 @@
                                 <del class="catalog__price-delete">450 875₽</del>   
                             </div>
                             <div class="catalog__price-basket">
-                                <a href="#" class="catalog__price-basket__del"><img src="image/minus-sm.jpg" alt=""></a>
+                                <a class="catalog__price-basket__del"><img src="image/minus-sm.jpg" alt=""></a>
                                 <span>1</span>
-                                <a href="#" class="catalog__price-basket__add"><img src="image/add-sm.jpg" alt=""></a>
+                                <a class="catalog__price-basket__add"><img src="image/add-sm.jpg" alt=""></a>
                                 <button type="button" class="catalog__price-basket__in">В корзину</button>
                             </div>
                         </div>
@@ -595,9 +602,9 @@
                                 <del class="catalog__price-delete">450 875₽</del>   
                             </div>
                             <div class="catalog__price-basket">
-                                <a href="#" class="catalog__price-basket__del"><img src="image/minus-sm.jpg" alt=""></a>
+                                <a class="catalog__price-basket__del"><img src="image/minus-sm.jpg" alt=""></a>
                                 <span>1</span>
-                                <a href="#" class="catalog__price-basket__add"><img src="image/add-sm.jpg" alt=""></a>
+                                <a class="catalog__price-basket__add"><img src="image/add-sm.jpg" alt=""></a>
                                 <button type="button" class="catalog__price-basket__in">В корзину</button>
                             </div>
                         </div>
@@ -632,9 +639,9 @@
                                 <del class="catalog__price-delete">450 875₽</del>   
                             </div>
                             <div class="catalog__price-basket">
-                                <a href="#" class="catalog__price-basket__del"><img src="image/minus-sm.jpg" alt=""></a>
+                                <a class="catalog__price-basket__del"><img src="image/minus-sm.jpg" alt=""></a>
                                 <span>1</span>
-                                <a href="#" class="catalog__price-basket__add"><img src="image/add-sm.jpg" alt=""></a>
+                                <a class="catalog__price-basket__add"><img src="image/add-sm.jpg" alt=""></a>
                                 <button type="button" class="catalog__price-basket__in">В корзину</button>
                             </div>
                         </div>
@@ -669,9 +676,9 @@
                                 <del class="catalog__price-delete">450 875₽</del>   
                             </div>
                             <div class="catalog__price-basket">
-                                <a href="#" class="catalog__price-basket__del"><img src="image/minus-sm.jpg" alt=""></a>
+                                <a class="catalog__price-basket__del"><img src="image/minus-sm.jpg" alt=""></a>
                                 <span>1</span>
-                                <a href="#" class="catalog__price-basket__add"><img src="image/add-sm.jpg" alt=""></a>
+                                <a class="catalog__price-basket__add"><img src="image/add-sm.jpg" alt=""></a>
                                 <button type="button" class="catalog__price-basket__in">В корзину</button>
                             </div>
                         </div>
