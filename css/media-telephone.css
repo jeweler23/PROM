@@ -89,7 +89,7 @@
             gap: 10px;
             flex-direction: column;
             justify-content: start;
-            /* align-items: flex-end; */
+          
         }
     
         .navigation-list .navigation__menu{
